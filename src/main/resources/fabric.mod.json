@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "powersmp",
+  "version": "${version}",
+  "name": "PowerSMP",
+  "description": "You gain power on kills, lose power on death. Each level of power makes you take 1 percent less damage and do 1 percent more damage.",
+  "authors": [
+    "Eesa (ees4.dev)"
+  ],
+  "contact": {
+    "repo": "https://github.com/CuriousCodingCanadian/PowerSMP"
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/powersmp/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "dev.ees4.powersmp.PowerSMP"
+    ]
+  },
+  "mixins": [
+    "powersmp.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
